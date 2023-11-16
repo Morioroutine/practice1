@@ -1,0 +1,102 @@
+body {
+    background-color: #4a4a4a; /* ダークグレーの背景色 */
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* モダンなフォントに変更 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* 行間を適切に設定 */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 40px 0; /* 余白を増やして空間を作る */
+}
+
+.title {
+    font-size: 2.5em;
+    color: #ffd700; /* タイトルの色をそのままに */
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1.5em; /* サブタイトルのサイズを大きくして読みやすくする */
+    color: #ddd; /* サブタイトルの色を少し暗くして区別 */
+    margin-bottom: 2em;
+}
+
+.success-stories {
+    display: flex;
+    justify-content: space-around; /* アイテム間に均等なスペースを作る */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; /* セクション全体に余白を追加 */
+    margin-bottom: 2em;
+    background: #333; /* セクションの背景色を設定 */
+    border-radius: 15px; /* 角の丸みを増やして柔らかい印象に */
+}
+
+.story {
+    flex: 0 1 calc(50% - 40px); /* フレックスアイテムのベース幅を計算 */
+    margin: 20px; /* 画像の周囲に余白を追加 */
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* 画像がコンテナに収まるように調整 */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 影を少し濃くして目立たせる */
+}
+
+.steps {
+    margin-bottom: 2em;
+}
+
+.action-button {
+    background-color: #ffd700;
+    color: #333;
+    padding: 15px 30px;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* クリック時のアニメーションを追加 */
+}
+
+.action-button:hover {
+    transform: scale(1.05); /* ホバー時にボタンが少し大きくなる */
+}
+
+footer {
+    font-size: 1.2em;
+    padding: 40px 0; /* フッターの上下の余白を増やす */
+    background: #333; /* フッターの背景色を設定 */
+    border-top: 5px solid #ffd700; /* トップボーダーで区切りを強調 */
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle, .story-description {
+        font-size: 1em;
+    }
+
+    .action-button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+
+    .success-stories {
+        padding: 10px; /* スマホ表示では余白を少なくする */
+   
